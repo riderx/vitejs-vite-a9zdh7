@@ -12,7 +12,7 @@ import { IonButton } from '@ionic/vue';
     <ion-button router-link="/2">second</ion-button>
   </nav>
   <main>
-    <router-view />
+    <ion-router-outlet />
   </main>
 </template>
 

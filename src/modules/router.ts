@@ -16,19 +16,15 @@ const router = createRouter({
     {
       path: '/',
       name: 'Home',
-      component: import('../components/HelloWorld.vue'),
+      component: () => import('../components/HelloWorld.vue'),
     },
     {
       path: '/2',
-      name: '2',
-      component: () => import('../components/Secondcomp.vue'),
+      name: 'Second',
+      component: () => import('../components/SecondComp.vue'),
     },
   ],
 });
-// router.beforeEach(async (to, from, next) => {
-//   isPlatform('capacitor')
-//   next();
-// });
 
 export const install: UserModule = ({ app }) => {
   app.use(router);

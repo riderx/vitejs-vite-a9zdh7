@@ -1,19 +1,14 @@
 <script setup lang="ts">
 // This starter template is using Vue 3 <script setup> SFCs
 // Check out https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup
-import HelloWorld from './components/HelloWorld.vue';
-import { IonButton } from '@ionic/vue';
+// import HelloWorld from './components/HelloWorld.vue';
+import { IonApp, IonRouterOutlet } from '@ionic/vue';
 </script>
 
 <template>
-  <HelloWorld msg="Hello Vue 3 + TypeScript + Vite + Ionic" />
-  <nav>
-    <ion-button router-link="/">Home</ion-button>
-    <ion-button router-link="/2">second</ion-button>
-  </nav>
-  <main>
+  <ion-app>
     <ion-router-outlet />
-  </main>
+  </ion-app>
 </template>
 
 <style>

@@ -1,29 +1,14 @@
 <script setup lang="ts">
-import { ref } from 'vue'
-
-defineProps<{ msg: string }>()
-
-const count = ref(0)
+import { IonContent, IonPage, IonButton } from '@ionic/vue';
 </script>
 
 <template>
-  <h1>{{ msg }}</h1>
+  <ion-page>
+    <ion-content :fullscreen="true">
+      <h1>Hello World</h1>
+      <ion-button router-link="/2">second</ion-button>
+    </ion-content>
+  </ion-page>
 </template>
 
-<style scoped>
-a {
-  color: #42b983;
-}
-
-label {
-  margin: 0 0.5em;
-  font-weight: bold;
-}
-
-code {
-  background-color: #eee;
-  padding: 2px 4px;
-  border-radius: 4px;
-  color: #304455;
-}
-</style>
+<style scoped></style>

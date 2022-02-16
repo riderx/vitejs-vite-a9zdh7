@@ -1,7 +1,6 @@
 import { createRouter, createWebHistory } from '@ionic/vue-router';
 import { App } from 'vue';
 import { Router, RouteRecordRaw } from 'vue-router';
-// import { isPlatform } from '@ionic/vue';
 
 interface AppContext<HasRouter extends boolean = true> {
   app: App<Element>;

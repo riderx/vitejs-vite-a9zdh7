@@ -1,0 +1,22 @@
+{
+  "name": "vite-vue-typescript-starter",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc --noEmit && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@ionic/vue": "6.0.8",
+    "@ionic/vue-router": "6.0.8",
+    "vue": "^3.2.31",
+    "vue-router": "^4.0.12",
+    "vue-tel-input": "v6.0.0-beta.6"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^2.2.0",
+    "typescript": "^4.5.4",
+    "vite": "^2.8.3",
+    "vue-tsc": "^0.31.4"
+  }
+}
